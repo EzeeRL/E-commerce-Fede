@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar Producto</title>
+    <link rel="stylesheet" href="editar-producto.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Audio Manager</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+          <li><a href="gestion-productos.html">Gestión de Productos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="product-detail">
+        <div class="product-image">
+          <img src="../imagenes-productos/img-product.jpg" alt="Parlante JBL" id="productImage" />
+        </div>
+
+        <div class="product-info">
+          <!-- Nombre del producto y input para editar -->
+          <h1 id="productName">Parlante JBL Inalámbrico</h1>
+          <div class="form-group">
+            <label for="editProductName">Editar nombre del producto:</label>
+            <input
+              type="text"
+              id="editProductName"
+              placeholder="Nuevo nombre del producto"
+            />
+          </div>
+
+          <!-- Precio del producto y input para editar -->
+          <h2 id="productPrice">$200.000</h2>
+          <div class="form-group">
+            <label for="editProductPrice">Editar precio del producto:</label>
+            <input
+              type="number"
+              id="editProductPrice"
+              placeholder="Nuevo precio del producto"
+            />
+          </div>
+
+          <!-- Descripción del producto y input para editar -->
+          <p id="productDescription">
+            Un parlante portátil con excelente calidad de sonido.
+          </p>
+          <div class="form-group">
+            <label for="editProductDescription"
+              >Editar descripción del producto:</label
+            >
+            <textarea
+              id="editProductDescription"
+              placeholder="Nueva descripción del producto"
+            ></textarea>
+          </div>
+
+          <!-- Botón para guardar los cambios -->
+          <button class="save-btn">Guardar producto</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
